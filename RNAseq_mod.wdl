@@ -1,9 +1,9 @@
 version 1.0
 
-# This workflow starts with a Terra data table with SRR ids in a column. It pulls data 
-# from sra then trims adapters with bbduk (defaults are Illumina universal adapters), runs
-# fastqc to check that adapters have been removed and sequence quality is acceptable, and 
-# finally, quantifies reads with salmon. Assumes data is paired-end with F and R reads.
+# This workflow starts with SRA accession numbers. It pulls data from sra then trims adapters 
+# with bbduk (defaults are Illumina universal adapters), runs fastqc to check that adapters 
+# have been removed and sequence quality is acceptable, and finally, quantifies reads with salmon. 
+# Assumes data is paired-end with F and R reads.
 
 import "tasks/task_fastq_dl.wdl" as dl
 import "tasks/task_bbduk.wdl" as trim
