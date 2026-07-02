@@ -26,7 +26,7 @@ task fastq_dl_sra {
     docker: "quay.io/biocontainers/fastq-dl:3.0.0--pyhdfd78af_0"
     memory:"8 GB"
     cpu: 2
-    disks: "local-disk 100 SSD"
-    preemptible:  1
+    disks: "local-disk 75 HDD"
+    preemptible:  3
   }
 }
