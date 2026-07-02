@@ -46,6 +46,7 @@ task bbduk {
     memory: "8 GB"
     cpu: 2
     disks: "local-disk " + disk_size + " SSD"
+    preemptible: 3
   }
 }
 
